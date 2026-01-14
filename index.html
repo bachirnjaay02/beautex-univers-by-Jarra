@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEAUTEX UNIVERS</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class=" shadow-sm">
+    <nav class="container navbar navbar-expand-lg ">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <img src="img/logo.jpeg" alt="Logo BEAUTEX UNIVERS" width="60" height="60"
+          class="d-inline-block text-white-block rounded align-text-top me-2">
+      </a>
+      <div id="nav-buttons" class="ms-auto d-flex gap-2 align-items-center">
+        <button class="btn  position-relative" data-bs-toggle="offcanvas"
+          data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+          Panier <span id="cart-count" class="badge bg-danger ms-2">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-4 ">
+    <section class="text-center mb-4">
+      <img src="img/logo.jpeg" alt="BEAUTEX UNIVERS Logo" width="120" height="120"
+        class="d-inline-block rounded align-text-top mb-3">
+         
+      <h1 class=" display-6 fw-bold text-white"><span class="pulse-text"> Bienvenue sur BEAUTEX UNIVERS</span></h1>
+      <p class=" text-center text-white"><span class="pulse-text">Découvrez nos tissus pour couture.</span></p>
+     
+    </section>
+
+    <section id="products" class="row g-4">
+      <!-- Product card with meter selector -->
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 product" data-id="1" data-name="swiss lace brodé" data-price="175000"
+          data-image="img/1.jpeg">
+          <img src="img/1.jpeg" class="card-img-top" alt="swiss lace brodé">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">swiss lace brodé</h5>
+            <p class="card-text text-muted"></p>
+            <div class="mt-auto">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <strong class="text-price">175 000 F CFA</strong>
+              </div>
+              <div class="input-group input-group-sm">
+                <button class="btn btn-avertissement add-to-cart fw-bold">Ajouter au panier</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 product" data-id="2" data-name="brodé uni" data-price="100000" data-image="img/2.jpeg">
+          <img src="img/2.jpeg" class="card-img-top" alt="brodé uni">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">brodé uni</h5>
+            <p class="card-text text-muted">Tissu luxueux, parfait pour robes et doublures.</p>
+            <div class="mt-auto">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <strong class="text-price">100 000 F CFA </strong>
+              </div>
+              <div class="input-group input-group-sm">
+                <button class="btn btn-avertissement add-to-cart fw-bold">Ajouter au panier</button>
+              </div>
+              <!-- <div class="text-epuise">Épuisé
+
+              </div> -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 product" data-id="3" data-name="lafaya" data-price="85000"
+          data-image="img/3.jpeg">
+          <img src="img/3.jpeg" class="card-img-top" alt="lafaya">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">lafaya</h5>
+            <p class="card-text text-muted">Résistant et respirant, idéal pour l'été.</p>
+            <div class="mt-auto">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <strong class="text-price">85 000 F CFA</strong>
+              </div>
+              <div class="input-group input-group-sm">
+                <button class="btn btn-avertissement add-to-cart fw-bold">Ajouter au panier</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 product" data-id="3" data-name="brodé uni" data-price="85000"
+          data-image="img/4.jpeg">
+          <img src="img/4.jpeg" class="card-img-top" alt="lafaya">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">brodé uni</h5>
+            <p class="card-text text-muted">Tissu luxueux, parfait pour robes et doublures.</p>
+            <div class="mt-auto">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <strong class="text-price">100 000 F CFA</strong>
+              </div>
+              <div class="input-group input-group-sm">
+                <button class="btn btn-avertissement add-to-cart fw-bold">Ajouter au panier</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 product" data-id="3" data-name="lafaya" data-price="85000"
+          data-image="img/5.jpeg">
+          <img src="img/5.jpeg" class="card-img-top" alt="lafaya">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">lafaya</h5>
+            <p class="card-text text-muted">Résistant et respirant, idéal pour l'été.</p>
+            <div class="mt-auto">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <strong class="text-price">85 000 F CFA</strong>
+              </div>
+              <div class="input-group input-group-sm">
+                <button class="btn btn-avertissement add-to-cart fw-bold">Ajouter au panier</button>
+              </div>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 product" data-id="3" data-name="lafaya" data-price="85000"
+          data-image="img/6.jpeg">
+          <img src="img/6.jpeg" class="card-img-top" alt="lafaya">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">lafaya</h5>
+            <p class="card-text text-muted">Résistant et respirant, idéal pour l'été.</p>
+            <div class="mt-auto">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <strong class="text-price">85 000 F CFA</strong>
+              </div>
+              <div class="input-group input-group-sm">
+                <button class="btn btn-avertissement add-to-cart fw-bold">Ajouter au panier</button>
+              </div>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 product" data-id="3" data-name="swiss lace brodé" data-price="175000"
+          data-image="img/7.jpeg">
+          <img src="img/7.jpeg" class="card-img-top" alt="swiss lace brodé">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">swiss lace brodé</h5>
+            <div class="mt-auto">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <strong class="text-price">175 000 F CFA</strong>
+              </div>
+              <div class="input-group input-group-sm">
+                <button class="btn btn-avertissement add-to-cart fw-bold">Ajouter au panier</button>
+              </div>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 product" data-id="3" data-name="swiss lace brodé" data-price="85000"
+          data-image="img/8.jpeg">
+          <img src="img/8.jpeg" class="card-img-top" alt="swiss lace brodé">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">swiss lace brodé</h5>
+            <p class="card-text text-muted">Résistant et respirant, idéal pour l'été.</p>
+            <div class="mt-auto">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <strong class="text-price">175 000 F CFA</strong>
+              </div>
+              <div class="input-group input-group-sm">
+                <button class="btn btn-avertissement add-to-cart fw-bold">Ajouter au panier</button>
+              </div>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 product" data-id="3" data-name="lafaya" data-price="85000"
+          data-image="img/10.jpeg">
+          <img src="img/10.jpeg" class="card-img-top" alt="lafaya">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">lafaya</h5>
+            <p class="card-text text-muted">Résistant et respirant, idéal pour l'été.</p>
+            <div class="mt-auto">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <strong class="text-price">85 000 F CFA</strong>
+              </div>
+              <div class="input-group input-group-sm">
+                <button class="btn btn-avertissement add-to-cart fw-bold">Ajouter au panier</button>
+              </div>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 product" data-id="3" data-name="brodé uni" data-price="85000"
+          data-image="img/11.jpeg">
+          <img src="img/11.jpeg" class="card-img-top" alt="brodé uni">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">brodé uni</h5>
+            <p class="card-text text-muted">Tissu luxueux, parfait pour robes et doublures.</p>
+            <div class="mt-auto">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <strong class="text-price">100 000 F CFA</strong>
+              </div>
+              <div class="input-group input-group-sm">
+                <button class="btn btn-avertissement add-to-cart fw-bold">Ajouter au panier</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 product" data-id="3" data-name="brodé uni" data-price="100000"
+          data-image="img/12.jpeg">
+          <img src="img/12.jpeg" class="card-img-top" alt="brodé uni">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">brodé uni</h5>
+            <p class="card-text text-muted">Tissu luxueux, parfait pour robes et doublures.</p>
+            <div class="mt-auto">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <strong class="text-price">100 000 F CFA</strong>
+              </div>
+              <div class="input-group input-group-sm">
+                <button class="btn btn-avertissement add-to-cart fw-bold">Ajouter au panier</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 product" data-id="3" data-name="lafaya" data-price="85000"
+          data-image="img/13.jpeg">
+          <img src="img/13.jpeg" class="card-img-top" alt="lafaya">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">lafaya</h5>
+            <p class="card-text text-muted">Résistant et respirant, idéal pour l'été.</p>
+            <div class="mt-auto">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <strong class="text-price">85 000 F CFA</strong>
+              </div>
+              <div class="input-group input-group-sm">
+                <button class="btn btn-avertissement add-to-cart fw-bold">Ajouter au panier</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100 product" data-id="3" data-name="swiss lace brodé" data-price="175000"
+          data-image="img/14.jpeg">
+          <img src="img/14.jpeg" class="card-img-top" alt="swiss lace brodé">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">swiss lace brodé</h5>
+            <p class="card-text text-muted">Résistant et respirant, idéal pour l'été.</p>
+            <div class="mt-auto">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <strong class="text-price">175 000 F CFA</strong>
+              </div>
+              <div class="input-group input-group-sm">
+                <button class="btn btn-avertissement add-to-cart fw-bold">Ajouter au panier</button>
+              </div>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Offcanvas cart -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="cartOffcanvasLabel">Votre panier</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <div id="cart-items" class="mb-3">
+        <p class="text-muted">Votre panier est vide.</p>
+      </div>
+      <div class="mt-auto d-grid gap-2">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <strong>Total:</strong>
+          <strong id="cart-total">0 F CFA</strong>
+        </div>
+        <div class="d-flex gap-2">
+          <button id="clear-cart" class="btn btn-outline-secondary w-50">Vider le panier</button>
+          <button id="checkout-btn" class="btn btn-success w-50">Commander</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout modal -->
+  <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="checkoutModalLabel">Confirmer la commande</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+        </div>
+        <div class="modal-body">
+          <div id="checkout-summary" class="mb-2"></div>
+          <div class="mt-3 d-flex justify-content-between">
+            <strong>Total:</strong>
+            <strong id="checkout-total">0 F CFA</strong>
+          </div>
+
+          <hr>
+
+          <div class="mb-2">
+            <label for="buyer-name" class="form-label">Nom (optionnel)</label>
+            <input id="buyer-name" type="text" class="form-control" placeholder="Votre nom">
+          </div>
+          <div class="mb-2">
+            <label for="buyer-phone" class="form-label">Téléphone (optionnel)</label>
+            <input id="buyer-phone" type="tel" class="form-control" placeholder="+221...">
+          </div>
+          <div>
+            <label for="buyer-address" class="form-label">Adresse (optionnel)</label>
+            <input id="buyer-address" type="text" class="form-control" placeholder="Votre adresse">
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="remember-buyer">
+            <label class="form-check-label" for="remember-buyer">Mémoriser mes coordonnées</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn btn-success" id="confirm-order">Commander</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image lightbox modal -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-labelledby="lightboxModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content bg-dark">
+        <div class="modal-header bg-dark border-secondary">
+          <h5 class="modal-title text-white" id="lightboxModalLabel">Vue détaillée</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-center align-items-center bg-dark p-0">
+          <img id="lightbox-image" src="" alt="" style="max-height: 90vh; max-width: 100%; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class=" py-3 mt-4">
+    <div class="container text-center text-white justify-content-between align-items-center">© 2026 BEAUTEX UNIVERS — Tous droits réservés
+      <img src="img/logo.jpeg" alt="" width="60" height="40" class="d-flex align-items-center align-text-center ms-1">
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Cart handling script -->
+  <script>
+    (function () {
+      const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+      const cartCountEl = document.getElementById('cart-count');
+      const cartItemsEl = document.getElementById('cart-items');
+      const cartTotalEl = document.getElementById('cart-total');
+      const checkoutBtn = document.getElementById('checkout-btn');
+      const clearBtn = document.getElementById('clear-cart');
+      const checkoutSummaryEl = document.getElementById('checkout-summary');
+      const checkoutTotalEl = document.getElementById('checkout-total');
+      const confirmOrderBtn = document.getElementById('confirm-order');
+      const buyerNameInput = document.getElementById('buyer-name');
+      const buyerPhoneInput = document.getElementById('buyer-phone');
+      const buyerAddressInput = document.getElementById('buyer-address');
+      const rememberBuyerCheckbox = document.getElementById('remember-buyer');
+
+      function formatPrice(n) {
+        return n.toLocaleString('fr-FR') + ' F CFA';
+      }
+
+      function save() { localStorage.setItem('cart', JSON.stringify(cart)); }
+
+      function updateCartUI() {
+        const count = cart.reduce((s, i) => s + i.quantity, 0);
+        cartCountEl.textContent = count;
+
+        if (cart.length === 0) {
+          cartItemsEl.innerHTML = '<p class="text-muted">Votre panier est vide.</p>';
+          checkoutBtn.disabled = true;
+          clearBtn.disabled = true;
+        } else {
+          cartItemsEl.innerHTML = '';
+          cart.forEach((item, idx) => {
+            const div = document.createElement('div');
+            div.className = 'cart-item d-flex justify-content-between align-items-center';
+            div.innerHTML = `
+              <div class="d-flex align-items-center gap-2">
+                <img src="${item.image}" class="rounded">
+                <div>
+                  <div class="fw-semibold">${item.name}</div>
+                  <small class="text-muted">${formatPrice(item.price)}</small>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <div class="qty-control">
+                  <button class="btn btn-sm btn-outline-secondary qty-decrease" data-index="${idx}" aria-label="Diminuer">-</button>
+                  <span class="mx-1">${item.quantity}</span>
+                  <button class="btn btn-sm btn-outline-secondary qty-increase" data-index="${idx}" aria-label="Augmenter">+</button>
+                </div>
+                <button class="btn btn-sm btn-outline-danger remove-item" data-index="${idx}">Suppr</button>
+              </div>
+            `;
+            cartItemsEl.appendChild(div);
+          });
+          checkoutBtn.disabled = false;
+          clearBtn.disabled = false;
+        }
+
+        const total = cart.reduce((s, i) => s + i.price * i.quantity, 0);
+        cartTotalEl.textContent = formatPrice(total);
+      }
+
+      function addToCart(product, sourceCard) {
+        const existing = cart.find(i => i.id === product.id);
+        if (existing) existing.quantity += 1;
+        else cart.push({ ...product, quantity: 1 });
+        save();
+        updateCartUI();
+
+        // animate source card briefly
+        if (sourceCard) {
+          sourceCard.classList.add('pulse');
+          setTimeout(() => sourceCard.classList.remove('pulse'), 600);
+        }
+      }
+
+      document.querySelectorAll('.add-to-cart').forEach(btn => {
+        btn.addEventListener('click', e => {
+          const card = btn.closest('.product');
+          const product = {
+            id: card.dataset.id,
+            name: card.dataset.name,
+            price: Number(card.dataset.price),
+            image: card.dataset.image
+          };
+          addToCart(product, card);
+
+          // show offcanvas (Bootstrap)
+          const offcanvasEl = document.getElementById('cartOffcanvas');
+          const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl);
+          bsOffcanvas.show();
+        });
+      });
+
+      cartItemsEl.addEventListener('click', e => {
+        const idx = Number(e.target.dataset.index);
+        if (e.target.classList.contains('remove-item')) {
+          cart.splice(idx, 1);
+          save();
+          updateCartUI();
+        }
+        if (e.target.classList.contains('qty-decrease')) {
+          const item = cart[idx];
+          if (!item) return;
+          item.quantity = Math.max(0, item.quantity - 1);
+          if (item.quantity === 0) cart.splice(idx, 1);
+          save();
+          updateCartUI();
+        }
+        if (e.target.classList.contains('qty-increase')) {
+          const item = cart[idx];
+          if (!item) return;
+          item.quantity += 1;
+          save();
+          updateCartUI();
+        }
+      });
+
+      clearBtn.addEventListener('click', () => {
+        if (cart.length === 0) return;
+        if (!confirm('Vider le panier ?')) return;
+        cart.length = 0;
+        save();
+        updateCartUI();
+      });
+
+      checkoutBtn.addEventListener('click', () => {
+        // open modal to review and add contact info
+        if (cart.length === 0) return;
+
+        // fill checkout summary
+        checkoutSummaryEl.innerHTML = '';
+        const list = document.createElement('div');
+        cart.forEach(item => {
+          const row = document.createElement('div');
+          row.className = 'd-flex justify-content-between mb-2';
+          row.innerHTML = `<div>${item.name} × ${item.quantity}</div><div>${formatPrice(item.price * item.quantity)}</div>`;
+          list.appendChild(row);
+        });
+        checkoutSummaryEl.appendChild(list);
+        const total = cart.reduce((s, i) => s + i.price * i.quantity, 0);
+        checkoutTotalEl.textContent = formatPrice(total);
+
+        // load saved buyer info if available
+        const savedBuyer = JSON.parse(localStorage.getItem('buyer') || 'null');
+        if (savedBuyer) {
+          buyerNameInput.value = savedBuyer.name || '';
+          buyerPhoneInput.value = savedBuyer.phone || '';
+          buyerAddressInput.value = savedBuyer.address || '';
+          rememberBuyerCheckbox.checked = true;
+        } else {
+          buyerAddressInput.value = '';
+          rememberBuyerCheckbox.checked = false;
+        }
+
+        // close offcanvas and show modal
+        const offcanvasEl = document.getElementById('cartOffcanvas');
+        const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvasEl);
+        if (bsOffcanvas) bsOffcanvas.hide();
+
+        const modalEl = document.getElementById('checkoutModal');
+        const bsModal = new bootstrap.Modal(modalEl);
+        bsModal.show();
+      });
+
+      confirmOrderBtn.addEventListener('click', () => {
+        // prepare message including buyer details
+        const buyerName = buyerNameInput.value.trim();
+        const buyerPhone = buyerPhoneInput.value.trim();
+        const buyerAddress = buyerAddressInput.value.trim(); 
+
+        // basic phone validation (optional)
+        if (buyerPhone && !/^[+0-9\s\-()]{7,}$/.test(buyerPhone)) {
+          alert('Veuillez entrer un numéro de téléphone valide (chiffres et +).');
+          return;
+        }
+
+        const lines = ['Bonjour, je souhaite confirmer ma commande sur BEAUTEX UNIVERS:'];
+        if (buyerName) lines.push(`nom: ${buyerName}`);
+        if (buyerPhone) lines.push(`numero: ${buyerPhone}`);
+        if (buyerAddress) lines.push(`address: ${buyerAddress}`);
+        lines.push('');
+        cart.forEach(item => {
+          lines.push(`- ${item.name} × ${item.quantity} — ${formatPrice(item.price * item.quantity)}`);
+        });
+        const total = cart.reduce((s, i) => s + i.price * i.quantity, 0);
+        lines.push('');
+        lines.push(`Total: ${formatPrice(total)}`);
+        lines.push('');
+        lines.push('Merci.');
+
+        // save buyer details if requested
+        if (rememberBuyerCheckbox.checked) {
+          localStorage.setItem('buyer', JSON.stringify({ name: buyerName, phone: buyerPhone, address: buyerAddress }));
+        } else {
+          localStorage.removeItem('buyer');
+        }
+
+        const message = encodeURIComponent(lines.join('\n'));
+        const phone = '221777120901'; // destinataire
+        const url = `https://wa.me/${phone}?text=${message}`;
+
+        window.open(url, '_blank');
+
+        // clear cart after sending
+        cart.length = 0;
+        save();
+        updateCartUI();
+
+        const modalEl = document.getElementById('checkoutModal');
+        const bsModal = bootstrap.Modal.getInstance(modalEl);
+        if (bsModal) bsModal.hide();
+      });
+
+      // init
+      updateCartUI();
+
+      // Lightbox functionality for product images
+      const lightboxModal = document.getElementById('lightboxModal');
+      const lightboxImage = document.getElementById('lightbox-image');
+
+      document.querySelectorAll('.card-img-top').forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => {
+          lightboxImage.src = img.src;
+          const bsModal = new bootstrap.Modal(lightboxModal);
+          bsModal.show();
+        });
+      });
+    })();
+  </script>
+
+</body>
+
+</html>

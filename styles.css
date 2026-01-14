@@ -1,0 +1,125 @@
+/* styles.css — styles simples pour la boutique */
+:root{
+  --primary: #011431;
+  --logo-primary: #011431; /* couleur principale du logo (à ajuster si besoin) */
+  --logo-accent: #f0c040;  /* couleur secondaire (dorée) du logo */
+  --price-color: #031961; /* blue-800 (Tailwind) pour les prix */
+} 
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+background: var(--primary);
+  background-image: url(img/logo.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  color:#222;
+}
+header .navbar-brand{
+  font-size:1.1rem;
+}
+.text-price{
+  color:var(--price-color) !important;
+}
+.pulse-text{
+  animation: pulse-animation 2s ease-in-out infinite;
+}
+@keyframes pulse-animation{
+  0%,70%{color:var(--logo-primary)}
+  70%,50%{color:var(--logo-accent)}
+  50%,100%{color: white}
+}
+.text-epuise{
+  color:rgb(250, 247, 247);
+  font-weight:bold;
+  background-color: red;
+  border: #222;
+  width: fit-content;
+  border-radius: 4px;
+}
+.btn.btn-avertissement{
+  background: linear-gradient(135deg, var(--logo-primary), var(--logo-accent));
+  color: #fff;
+  border: none;
+}
+.text-BLEU-900{
+  color:var(--logo-primary) !important;
+}
+
+/* Nav buttons match logo colors */
+header .ms-auto .btn{
+  background: linear-gradient(135deg, var(--logo-primary), var(--logo-accent));
+  color: #fff;
+  border: none;
+}
+header .ms-auto .btn.btn-outline-primary{
+  background: transparent;
+  color: var(--logo-primary);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+header .ms-auto .btn:hover{
+  filter: brightness(0.95);
+  transform: translateY(-1px);
+}
+  
+header{
+  background-color: var(--primary);
+ position:relative;
+  top:0;
+  width:100%;
+ 
+}
+footer{
+  background-color: var(--primary);
+  color:#fff;
+}
+.btn{
+  background-color: var(--primary);
+  color: goldenrod;
+
+}
+.card-img-top{
+  height:200px;
+  object-fit:cover;
+}
+.card{
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 6px 18px rgba(16,24,40,.08);
+}
+.badge.bg-danger{
+  font-size:.8rem;
+}
+.offcanvas-body{
+  min-height:280px;
+}
+.cart-item{
+  border-bottom:1px solid #eee;
+  padding-bottom:8px;
+  margin-bottom:8px;
+}
+.cart-item img{
+  width:60px;
+  height:45px;
+  object-fit:cover;
+  border-radius:4px;
+}
+.qty-control{
+  display:inline-flex;
+  gap:6px;
+  align-items:center;
+}
+.qty-control button{
+  padding:2px 8px;
+}
+
+@media (max-width:576px){
+  .card-img-top{height:150px}
+}
+/* backgroup sur mobile */
+@media (max-width:768px){
+  body{
+    background-size: 40px 40px;
+    background-attachment:fixed ;
+  }
+}
